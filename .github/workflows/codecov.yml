@@ -37,7 +37,7 @@ jobs:
           packageUser: ${{ github.actor }}
           packagePAT: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          ./gradlew test
+          ./gradlew build
       - name: Upload coverage reports to Codecov
         uses: codecov/codecov-action@v4.0.1
         env:
