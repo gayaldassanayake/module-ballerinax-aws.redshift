@@ -2,7 +2,7 @@ version: '3'
 
 services:
   redshift:
-    image: ghcr.io/hearthsim/docker-pgredshift:latest
+    image: ghcr.io/hearthsim/docker-pgredshift@sha256:db76e1b01463f1c48994157b084e7e4107c587753313e19231374a5f1ba324d4
     environment:
       POSTGRES_PASSWORD: password
     ports:
